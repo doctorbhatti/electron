@@ -10,6 +10,7 @@
     "node": ">=8.0.0"
   },
   "scripts": {
+    "test:integration": "xvfb-maybe --auto-servernum",
     "start": "electron mstream-electron.js",
     "wizard": "electron cli-boot-wrapper.js --wizard",
     "pack": "electron-builder --dir",
@@ -108,8 +109,9 @@
     "music-metadata": "^6.2.0",
     "nanoid": "^2.1.9",
     "winston": "^3.2.1",
-    "ws": "^7.2.1"
-  },
+    "ws": "^7.2.1",
+    "xvfb-maybe": "^0.2.1"
+},
   "devDependencies": {
     "electron": "^9.0.0"
   }
